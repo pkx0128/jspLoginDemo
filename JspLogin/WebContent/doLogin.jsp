@@ -7,6 +7,7 @@
 
 <%
 	if(userDao.userLogin(myuser)){
+		session.setAttribute("username", myuser.getUsername());
 		request.getRequestDispatcher("welcome.jsp").forward(request, response);
 	}else{
 		response.sendRedirect("login.jsp");

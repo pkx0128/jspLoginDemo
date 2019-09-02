@@ -7,6 +7,11 @@
 <title>Welcome</title>
 </head>
 <body>
+	<%
+		if(session.getAttribute("username")==null){
+			response.sendRedirect("login.jsp");
+		}
+	%>
 	<h1>Welcome,<%=request.getParameter("username") %></h1>
 </body>
 </html>
