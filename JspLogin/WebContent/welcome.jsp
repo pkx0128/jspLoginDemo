@@ -12,6 +12,6 @@
 			response.sendRedirect("login.jsp");
 		}
 	%>
-	<h1>Welcome,<%=request.getParameter("username") %></h1>
+	<h1>Welcome,<%=request.getParameter("username") %>同学</h1>
 </body>
 </html>
